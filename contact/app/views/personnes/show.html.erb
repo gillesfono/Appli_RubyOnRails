@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @personne.nom %>
+</p>
+
+<p>
+  <strong>Prenom:</strong>
+  <%= @personne.prenom %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @personne.eamil %>
+</p>
+
+<p>
+  <strong>Portable:</strong>
+  <%= @personne.portable %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @tag.content %>
+</p>
+
+<%= link_to 'Modifier', edit_personne_path(@personne), class:"btn btn-secondary" %> 
+<%= link_to 'Retour', personnes_path, class:"btn btn-secondary"  %>
